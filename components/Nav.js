@@ -24,7 +24,7 @@ function Navi() {
   return (
     <Navbar color="dark" light expand="md sm lg" sticky="top" className="px-5">
       <NavbarBrand href="/">
-        <h1 className={navStyles.title}>foodiy</h1>
+        <h1 className={navStyles.title}>foodiiy</h1>
       </NavbarBrand>
       <NavbarToggler onClick={toggle} style={{ backgroundColor: "#fff" }} />
       <Collapse isOpen={isOpen} navbar >

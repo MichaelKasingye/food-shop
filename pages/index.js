@@ -11,7 +11,7 @@ export default function Home() {
     <div className={home.container} id="home">
       <Meta title="Home" />
       <Header />
-      <Title title="Foods" />
+      <Title title="Foodiiy" />
       <div className={home.cardsHome} id="products">
         {introCards.map((info) => (
           <Cards

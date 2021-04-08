@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const Meta = ({ title, keywords, description }) => {
+const Meta = ({ title, keywords, description, siteLink, image }) => {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,31 +10,31 @@ const Meta = ({ title, keywords, description }) => {
       <link rel="icon" href="/favicon.ico" />
 
 
-      <meta property="og:title" content="Shop site " />
+      <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://miniecommerce.netlify.app/" />
+    <meta property="og:url" content={siteLink} />
     <meta
       property="og:image"
-      content="https://i.pinimg.com/originals/7f/84/e6/7f84e6245c28a0e056b88c5c1b389cde.jpg"
+      content={image}
     />
     <meta
       property="og:description"
-      content="Mini e-shop that displays stock to order"
+      content={description}
     />
 
-    <meta property="twitter:card" content="Mini e-shop" />
+    <meta property="twitter:card" content={title}/>
     <meta
       property="twitter:url"
-      content="https://miniecommerce.netlify.app/"
+      content={siteLink}
     />
-    <meta property="twitter:title" content="Mini e-shop" />
+    <meta property="twitter:title" content={title} />
     <meta
       property="twitter:description"
-      content="Mini e-shop that displays stock to order."
+      content={description}
     />
     <meta
       property="twitter:image"
-      content="https://i.pinimg.com/originals/7f/84/e6/7f84e6245c28a0e056b88c5c1b389cde.jpg"
+      content={image}
     />
 
 
@@ -50,9 +50,11 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Mini e-shop",
+  title: "foodiiy",
   keywords: "e-commerce",
-  description: "Mini e-shop that displays stock to order",
+  description: "Mini food e-shop that displays food stock to order",
+  image:"https://i.pinimg.com/564x/53/13/34/531334345574129dcc9e53d39d3ce0fc.jpg",
+  siteLink:"https://foodiiy.netlify.app/"
 };
 
 export default Meta;

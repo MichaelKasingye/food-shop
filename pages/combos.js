@@ -9,7 +9,7 @@ import home from "../styles/Home.module.css";
 function headsets(props) {
   return (
     <div>
-      <Meta title="Combos" />
+      <Meta title="foodiiy" />
       <Coursel image=" https://images.pexels.com/photos/3228803/pexels-photo-3228803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" title="Combos"/>
       <Title title="Combos" />
       <div className={home.cardsHome} id="products">
