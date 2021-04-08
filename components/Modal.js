@@ -72,43 +72,18 @@ function Modaler(props) {
               <ModalBody><div className={modaler.modalContact}><span className={modaler.modalContactSpan} ><p><AiTwotonePhone/></p><p  onClick={copyNo}>
             <CopyToClipboard text={figure}
           onCopy={() => setcopied({copied: true})}>
-          <span>{contact.tel}</span>
+          <span>{contacts.tel}</span>
         </CopyToClipboard>
         
         </p> </span> <span className={modaler.modalContactSpan}><p><ImMail3/></p ><p onClick={copyEmail}>Send - <CopyToClipboard text={figure}
           onCopy={() => setCopiedEmail({copied: true})}>
-          <span> {contact.email}</span>
+          <span> {contacts.email}</span>
         </CopyToClipboard></p> </span> 
                   </div>  </ModalBody>
                   {copied ? <span style={{color: 'red'}}>Number has been copied, switch to the Dail pad and paste to make the order.</span> : null}
                   {copiedEmail ? <span style={{color: 'red'}}>Email has been copied, switch to your mail box and paste address to make the order.</span> : null}
               <ModalFooter>
-              
-              
               </ModalFooter>
-
-             
-            {/* <Modal isOpen={nestedModal} toggle={toggleNested} onClosed={closeAll ? toggle : undefined}>
-              <ModalHeader className={modaler.vgrey}>Contact to order </ModalHeader>
-              <ModalBody><div className={modaler.modalContact}><span className={modaler.modalContactSpan} ><p><AiTwotonePhone/></p><p  onClick={copyNo}>
-            <CopyToClipboard text={figure}
-          onCopy={() => setcopied({copied: true})}>
-          <span>0775884545</span>
-        </CopyToClipboard>
-        
-        </p> </span> <span className={modaler.modalContactSpan}><p><ImMail3/></p ><p onClick={copyEmail}>Send - <CopyToClipboard text={figure}
-          onCopy={() => setCopiedEmail({copied: true})}>
-          <span> mail@gmail.com</span>
-        </CopyToClipboard></p> </span> 
-                  </div>  </ModalBody>
-                  {copied ? <span style={{color: 'red'}}>Number has been copied, switch to the Dail pad and paste to make the order.</span> : null}
-                  {copiedEmail ? <span style={{color: 'red'}}>Email has been copied, switch to your mail box and paste address to make the order.</span> : null}
-              <ModalFooter>
-              
-                <Button className={modaler.modalBtn}onClick={toggleNested}>Done</Button>{' '}
-                <Button className={modaler.doneButton}onClick={toggleAll}>All Done</Button>
-              </ModalFooter>
-            </Modal> */}
           </ModalBody>
           <ModalFooter>
            

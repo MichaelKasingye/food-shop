@@ -5,8 +5,10 @@ import Modal from "../components/Modal";
 function Cards({ title, desc, img, path }) {
   return (
     <div className={cards.height}>
-      <div className="card h-100" style={{ width: "18rem" }}>
-        <img src={img} className="card-img-top h-50" alt="..." />
+  
+      <div className="card h-100" 
+      className={cards.introCards}>
+        <img src={img} className="card-img-top h-50" className={cards.image} alt="..." />
         <div className="card-body">
           <h5 className="card-title text-lorange" className={cards.orange}>
             {title}
@@ -22,7 +24,7 @@ function Cards({ title, desc, img, path }) {
               data-toggle="modal"
               data-target="#exampleModalCenter"
             >
-              View {title}
+              Order {title}
             </button>
           </Link>
         </div>

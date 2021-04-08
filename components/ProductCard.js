@@ -15,7 +15,7 @@ function ProductCards(props) {
   }
   return (
     <div className={cards.heightAdjust}>
-      <div className="card h-100" style={{ width: "18rem", margin: "5px" }}>
+      <div className="card h-100" className={cards.productCard}>
         <img
           src={props.image}
           className="card-img-top "

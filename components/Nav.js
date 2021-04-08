@@ -22,21 +22,21 @@ function Navi() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md sm lg" sticky="top" className="px-5">
+    <Navbar color="dark" light expand="md sm lg" sticky="top" className="px-5">
       <NavbarBrand href="/">
-        <h1 className={navStyles.title}>Ejeg</h1>
+        <h1 className={navStyles.title}>foodiy</h1>
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
+      <NavbarToggler onClick={toggle} style={{ backgroundColor: "#fff" }} />
+      <Collapse isOpen={isOpen} navbar >
         <Nav className="mr-auto" navbar>
-          <NavItem>
-            <NavLink href="/#products">Products</NavLink>
+          <NavItem >
+            <NavLink href="/#products" className="text-white">Foods</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/#contact">Contact</NavLink>
+            <NavLink href="/#contact" className="text-white">Order</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href="/about"className="text-white">About</NavLink>
           </NavItem>
         </Nav>
       </Collapse>

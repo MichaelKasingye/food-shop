@@ -17,6 +17,7 @@
   color: #f39c12;
 }
 
+
 .title,
 .description {
   text-align: center;
@@ -51,4 +52,10 @@ color: aliceblue;
 }
 .navbar{
   margin-bottom: 0;
+}
+.links{
+color: bisque;
+}
+.menuIcon{
+
 }

@@ -4,12 +4,26 @@
   flex-wrap: wrap;
   align-items: center;
 }
+.introCards{
+  width: 18rem;
+  background: #212529;
+  box-shadow: rgba(201, 201, 201, 0.137) 0px 3px 8px;
+
+}
 .heightAdjust{
   height: 20rem;
-
+  margin: 9px;
+  box-shadow: rgba(201, 201, 201, 0.137) 0px 3px 8px;
+}
+.productCard{
+  width: 18rem;
+  background: #21252900;
+  /* border: 1px solid #95afc0; */
+ 
 }
 .height{
   height: 24rem;
+  margin: 5px;
 }
 .orange{
   color: #F39C12;
@@ -24,13 +38,13 @@ margin-left: 5px;
 max-height: 100%;
 }
 .image{
-  object-fit: contain;
+  object-fit: cover;
 /* border: 3px solid red; */
 display: flex;
   align-items: center;
   justify-content: center;
   height: 10rem;
   padding: 3px;
-  /* width: 10rem; */
+  width: 100%;
   
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { client } from "../contenfulClient/client";
+import {combos} from "../library/combos"
 import Modal from "./Modal";
 import ModalCard from "../components/ModalCard";
 import ProductCard from "../components/ProductCard";
@@ -10,38 +11,20 @@ function Cards({ title, desc, img }) {
   const [items, setItems] = useState();
   const [secondaryItems, setSecondaryItems] = useState();
 
-  useEffect(() => {
-    client
-      .getEntries()
-      .then(
-        (response) => setItems(response.items)
-        // console.log(response.items)
-      )
-      .catch((err) => console.log(err));
-  }, []);
-
-  useEffect(() => {
-    client
-      .getEntries()
-      .then((response) =>
-        // setItems(response.items.fields.productImages.fields)
-        // console.log(response.items)
-        response.items.map((data) => {
-          // console.log(data.fields.productImages)
-          const mappedData = data.fields.productImages;
-          // console.log(mappedData);
-          mappedData.map((images) => {
-            // console.log(images.fields.file.url);
-            setSecondaryItems(images.fields.file.url);
-          });
-        })
-      )
-      .catch((err) => console.log(err));
-  }, []);
-
+  // useEffect(() => {
+  //   client
+  //     .getEntries()
+  //     .then(
+  //       (response) => 
+  //       setItems(response.items)
+  //       // console.log(response.items)
+  //     )
+  //     .catch((err) => console.log(err));
+  // }, []);
+ 
   return (
     <div className={products.box}>
-      {typeof items != "undefined"
+      {/* {typeof items != "undefined"
         ? items
             .filter((filrterdData) => filrterdData.fields.headSets === true)
             // .slice(0, 5)
@@ -57,7 +40,22 @@ function Cards({ title, desc, img }) {
                 />
               </div>
             ))
-        : ""}
+        : ""} */}
+        {
+          combos
+          .map((product, index) => (
+            <div className={products.Cardbox}>
+              <ProductCard
+                key={Math.random()}
+                image={product.image}
+                title={product.title}
+                price={product.price}
+                productImages="img"
+                desc="dsdssdssddsd"
+              />
+            </div>
+          ))
+        }
     </div>
   );
 }

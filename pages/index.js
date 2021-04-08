@@ -11,7 +11,7 @@ export default function Home() {
     <div className={home.container} id="home">
       <Meta title="Home" />
       <Header />
-      <Title title="Products" />
+      <Title title="Foods" />
       <div className={home.cardsHome} id="products">
         {introCards.map((info) => (
           <Cards
@@ -23,7 +23,7 @@ export default function Home() {
         ))}
       </div>
 
-      <Title title="Contacts us" />
+      <Title title="Order" />
       <div className={home.contacts} id="contact">
         <Contact />
       </div>

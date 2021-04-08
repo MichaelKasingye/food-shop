@@ -34,47 +34,46 @@ const Header = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://images.pexels.com/photos/296625/pexels-photo-296625.jpeg?cs=srgb&dl=pexels-lukas-296625.jpg&fm=jpg"
+                src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                 className={headerStyles.size}
                 alt="..."
               />
               <div className="carousel-caption d-md-block">
                 <div className={headerStyles.captionseffects}>
-                  <h3>USBs</h3>
+                  <h3>Dessert</h3>
                   <p className={headerStyles.captionsbody}>
                     {" "}
-                    Connect your phone to a charge or PC from our USB variety
+                    Enjoy the sweet snacks of our dessert menu
                   </p>
                 </div>
               </div>
             </div>
             <div className="carousel-item ">
               <img
-                src="https://images.pexels.com/photos/696645/pexels-photo-696645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 className={headerStyles.size}
                 alt="..."
               />
               <div className="carousel-caption  d-md-block">
                 <div className={headerStyles.captionseffects}>
-                  <h3>Phone cases</h3>
+                  <h3>Combos</h3>
                   <p className={headerStyles.captionsbody}>
-                    Cover your phone to protect it from dust and shock, we have
-                    them all.
+                    Fill your belly to your content with our delicious combos
                   </p>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
               <img
-                src="https://images.pexels.com/photos/3756943/pexels-photo-3756943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="https://images.pexels.com/photos/452737/pexels-photo-452737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                 className={headerStyles.size}
                 alt="..."
               />
               <div className="carousel-caption d-md-block mw-100">
                 <div className={headerStyles.captionseffects}>
-                  <h3>Headsets</h3>
+                  <h3>Drinks</h3>
                   <p className={headerStyles.captionsbody}>
-                    Listen to quality sound from our collection of headsets.
+                    Quench that thirst with a varity of our special offer drinks
                   </p>
                 </div>
               </div>
